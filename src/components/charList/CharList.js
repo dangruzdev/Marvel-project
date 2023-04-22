@@ -1,3 +1,4 @@
+import React from "react";
 import { Component } from "react";
 import Spinner from "../spinner/Spinner";
 import ErrorMessage from "../errorMessage/ErrorMessage";
@@ -127,8 +128,14 @@ class CharList extends Component {
   }
 
   render() {
-    const { charList, loading, error, offset, newItemLoading, charEnded } =
-      this.state;
+    const {
+      charList,
+      loading,
+      error,
+      offset,
+      newItemLoading,
+      charEnded,
+    } = this.state;
 
     const items = this.renderItems(charList);
 
