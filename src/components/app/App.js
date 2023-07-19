@@ -1,51 +1,26 @@
-import { React, useState } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-} from "react-router-dom/cjs/react-router-dom";
+import { React } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { MainPage, ComicsPage, Page404, SingleComicPage } from "../pages";
 import AppHeader from "../appHeader/AppHeader";
-import RandomChar from "../randomChar/RandomChar";
-import CharList from "../charList/CharList";
-import CharInfo from "../charInfo/CharInfo";
-import ErrorBoundary from "../errorBoundary/ErrorBoundary";
 import AppBanner from "../appBanner/AppBanner";
-import ComicsList from "../comicsList/ComicsList";
-
-import decoration from "../../resources/img/vision.png";
 
 const App = () => {
-  const [selectedChar, setChar] = useState(null);
-
-  const onCharSelected = (id) => {
-    setChar(id);
-  };
-
   return (
     <Router>
       <div className="app">
-        <AppHeader />
+        {/* <AppHeader /> */}
         <main>
-          <Switch>
-            <Route exact path="/">
-              <ErrorBoundary>
-                <RandomChar />
-              </ErrorBoundary>
-              <div className="char__content">
-                <ErrorBoundary>
-                  <CharList onCharSelected={onCharSelected} />
-                </ErrorBoundary>
-                <ErrorBoundary>
-                  <CharInfo charId={selectedChar} />
-                </ErrorBoundary>
-              </div>
-              <img className="bg-decoration" src={decoration} alt="vision" />
+          <Routes>
+            <Route path="/" element={<AppHeader />}>
+              <Route index element={<MainPage />} />
+              <Route path="comics" element={<AppBanner />}>
+                <Route index element={<ComicsPage />} />
+                <Route path=":comicId" element={<SingleComicPage />} />
+                <Route path="*" element={<Page404 />} />
+              </Route>
+              <Route path="*" element={<Page404 />}></Route>
             </Route>
-            <Route exact path="/comics">
-              <AppBanner />
-              <ComicsList />
-            </Route>
-          </Switch>
+          </Routes>
         </main>
       </div>
     </Router>

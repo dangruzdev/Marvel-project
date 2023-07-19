@@ -6,6 +6,7 @@ import ErrorMessage from "../errorMessage/ErrorMessage";
 import Skeleton from "../skeleton/Skeleton";
 import useMarvelService from "../../services/MarvelService";
 import "./charInfo.scss";
+import { NavLink } from "react-router-dom";
 
 const CharInfo = ({ charId }) => {
   const [char, setChar] = useState(null);
@@ -81,7 +82,9 @@ const View = ({ char }) => {
         {comics.slice(0, 10).map((item, i) => {
           return (
             <li key={i} className="char__comics-item">
-              {item.name}
+              <NavLink to={`/comics/${item.resourceURI.substring(43)}`}>
+                {item.name}
+              </NavLink>
             </li>
           );
         })}
