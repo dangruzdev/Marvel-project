@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "./static/css/main.5919ddda.css",
+    "main.js": "./static/js/main.da652d5a.js",
+    "static/js/20.8cbffe35.chunk.js": "./static/js/20.8cbffe35.chunk.js",
+    "static/css/728.282496d8.chunk.css": "./static/css/728.282496d8.chunk.css",
+    "static/js/728.f264f663.chunk.js": "./static/js/728.f264f663.chunk.js",
+    "static/css/748.9e2e4f06.chunk.css": "./static/css/748.9e2e4f06.chunk.css",
+    "static/js/748.db65f003.chunk.js": "./static/js/748.db65f003.chunk.js",
+    "static/css/472.cc63f016.chunk.css": "./static/css/472.cc63f016.chunk.css",
+    "static/js/472.01e0ca3a.chunk.js": "./static/js/472.01e0ca3a.chunk.js",
+    "static/js/424.a7121728.chunk.js": "./static/js/424.a7121728.chunk.js",
+    "static/media/vision.png": "./static/media/vision.067d4ae1936d64a577ce.png",
+    "static/media/mjolnir.png": "./static/media/mjolnir.61f31e1809f12183a524.png",
+    "static/media/Avengers.png": "./static/media/Avengers.4065c8f9c94e3d8b039a.png",
+    "static/media/error.gif": "./static/media/error.42292aa12b6bc303ce99.gif",
+    "static/media/Avengers_logo.png": "./static/media/Avengers_logo.9eaf219344d83362e830.png",
+    "index.html": "./index.html",
+    "main.5919ddda.css.map": "./static/css/main.5919ddda.css.map",
+    "main.da652d5a.js.map": "./static/js/main.da652d5a.js.map",
+    "20.8cbffe35.chunk.js.map": "./static/js/20.8cbffe35.chunk.js.map",
+    "728.282496d8.chunk.css.map": "./static/css/728.282496d8.chunk.css.map",
+    "728.f264f663.chunk.js.map": "./static/js/728.f264f663.chunk.js.map",
+    "748.9e2e4f06.chunk.css.map": "./static/css/748.9e2e4f06.chunk.css.map",
+    "748.db65f003.chunk.js.map": "./static/js/748.db65f003.chunk.js.map",
+    "472.cc63f016.chunk.css.map": "./static/css/472.cc63f016.chunk.css.map",
+    "472.01e0ca3a.chunk.js.map": "./static/js/472.01e0ca3a.chunk.js.map",
+    "424.a7121728.chunk.js.map": "./static/js/424.a7121728.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5919ddda.css",
+    "static/js/main.da652d5a.js"
+  ]
+}
