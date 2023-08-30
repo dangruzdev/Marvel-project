@@ -22,7 +22,6 @@ const App = () => {
         <main>
           <Suspense fallback={<Spinner />}>
             <Routes>
-              {/* <Route path="/" element={<AppHeader />}> */}
               <Route index element={<MainPage />} />
               <Route path="comics" element={<AppBanner />}>
                 <Route index element={<ComicsPage />} />
@@ -30,7 +29,6 @@ const App = () => {
                 <Route path="*" element={<Page404 />} />
               </Route>
               <Route path="*" element={<Page404 />}></Route>
-              {/* </Route> */}
             </Routes>
           </Suspense>
         </main>
